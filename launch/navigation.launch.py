@@ -26,7 +26,7 @@ def generate_launch_description():
         launch_arguments={
             'map_subscribe_transient_local': 'true',
             'use_sim_time': 'true',
-            'params_file': get_package_share_directory('start_creating_robots') + '/config/navigation.yaml'
+            'params_file': get_package_share_directory('haul_truck') + '/config/navigation.yaml'
         }.items()
     )
 

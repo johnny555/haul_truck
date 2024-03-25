@@ -10,7 +10,7 @@
     <color rgba="1 0.482 0.251 1" />
   </material>
 
-  <xacro:include filename="$(find start_creating_robots)/worlds_and_models/krytn/inertial.xacro" />
+  <xacro:include filename="$(find krytn)/robot_description/magni/inertial.xacro" />
 
   <xacro:macro name="wheel" params="name">
     <link name="${name}">
