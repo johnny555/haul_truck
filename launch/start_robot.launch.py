@@ -13,8 +13,6 @@ from os.path import join
 def generate_launch_description():
 
     base_path = get_package_share_directory("haul_truck")
-    nav = IncludeLaunchDescription(join(base_path, "launch","mapping.launch.py"),
-                                      launch_arguments=[("with_sensors","true"), ("rviz_config","nav.rviz")])
+    nav = IncludeLaunchDescription(join(base_path, "launch","navigation.launch.py"))
 
-
-    return LaunchDescription([nav ])
+    return LaunchDescription([nav])
